@@ -76,7 +76,7 @@ Private Sub exportCode()
     #ElseIf APP_NAME = "Microsoft Excel" Then
         base_path = ThisWorkbook.Path
     #End If
-    For Each vbe_source_object In Application.VBE.VBProjects("storyline").VBComponents
+    For Each vbe_source_object In Application.VBE.VBProjects("storyline_helper").VBComponents
         Select Case vbe_source_object.Type
             Case vbext_ct_StdModule
                 file_suffix = "bas"
