@@ -10,7 +10,7 @@ Public Property Get StepImplementations() As Collection
     If m_step_implementations Is Nothing Then
         Set m_step_implementations = New Collection
         'add all classes with step implementations here:
-        For Each step_implementation_class In Array(New steps_unfold_storyline)
+        For Each step_implementation_class In Array()
             m_step_implementations.Add step_implementation_class
         Next
     End If

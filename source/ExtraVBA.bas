@@ -89,7 +89,7 @@ Private Sub exportCode()
             Case Else
                 file_suffix = "txt"
         End Select
-        If Left(vbe_source_object.Name, 6) = "Steps_" Or Left(vbe_source_object.Name, 8) = "Support_" Then
+        If LCase(Left(vbe_source_object.Name, 6)) = "steps_" Or Left(vbe_source_object.Name, 8) = "Support_" Then
             sub_path = "step_definitions"
         Else
             sub_path = "source"
