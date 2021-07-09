@@ -24,7 +24,7 @@ Public Function load_features(Optional feature_dir) As Collection
     Dim loaded_feature As Collection
     
     If IsMissing(feature_dir) Then
-        feature_dir = get_feature_dir(ActivePresentation.Path)
+        feature_dir = get_feature_dir(Application.Presentations("storyline.pptm").Path)
     End If
     If Right(feature_dir, 1) <> ExtraVBA.get_path_separator Then
         feature_dir = feature_dir & ExtraVBA.get_path_separator
