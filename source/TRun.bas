@@ -28,5 +28,6 @@ Public Property Get Session() As TSession
 End Property
 
 Private Sub cleanup_context()
-
+    Stop
+    TSupport.close_testfiles
 End Sub
